@@ -1,0 +1,162 @@
+/* styles/prueba3Style.css → Adaptado al HTML con id="pista2" */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #ff004c;
+    text-shadow: 0 0 20px rgba(255, 0, 76, 0.8);
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #00ff9d;
+    text-shadow: 0 0 15px rgba(0, 255, 157, 0.6);
+}
+
+p {
+    font-size: 1.35rem;
+    max-width: 800px;
+    margin: 18px auto;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+p b {
+    color: #ffd700;
+    font-size: 1.6rem;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+/* Formulario */
+form {
+    background: rgba(20, 20, 40, 0.85);
+    padding: 50px 60px;
+    border-radius: 25px;
+    border: 3px solid #ff004c;
+    box-shadow: 0 0 40px rgba(255, 0, 76, 0.4);
+    backdrop-filter: blur(10px);
+    max-width: 650px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 520px;
+    padding: 18px 22px;
+    margin: 0 auto 30px;
+    display: block;
+    font-size: 1.3rem;
+    font-family: inherit;
+    background: #16213e;
+    border: 2px solid #ff004c;
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 25px rgba(255, 0, 76, 0.7);
+    background: #1a1033;
+}
+
+/* Botones – sin necesidad de div extra */
+form button {
+    padding: 16px 32px;
+    margin: 12px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    display: inline-block;
+}
+
+form button[type="submit"] {
+    background: linear-gradient(to right, #ff004c, #ff4500);
+    color: white;
+    box-shadow: 0 10px 25px rgba(255, 0, 76, 0.5);
+}
+
+form button[type="submit"]:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(255, 0, 76, 0.7);
+}
+
+form button[type="button"] {
+    background: transparent;
+    color: #00ff9d;
+    border: 3px solid #00ff9d;
+    box-shadow: 0 10px 25px rgba(0, 255, 157, 0.3);
+}
+
+form button[type="button"]:hover {
+    background: #00ff9d;
+    color: #000;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 255, 157, 0.6);
+}
+
+/* ÁREA DE PISTA – AHORA ES #pista2 (como tienes en tu HTML) */
+#pista2 {
+    margin-top: 30px;
+    padding: 18px 25px;
+    background: rgba(0, 255, 157, 0.15);
+    border-left: 6px solid #00ff9d;
+    border-radius: 12px;
+    color: #bffff2;
+    font-size: 1.3rem;
+    font-style: italic;
+    min-height: 50px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mensaje de error del PHP */
+p[style*="color:red"] {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff3366 !important;
+    text-shadow: 0 0 15px rgba(255, 51, 102, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 { font-size: 2.3rem; }
+    h2 { font-size: 1.6rem; }
+    form { padding: 35px 30px; }
+    form button {
+        display: block;
+        width: 85%;
+        margin: 12px auto;
+    }
+}

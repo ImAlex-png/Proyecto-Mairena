@@ -1,0 +1,126 @@
+/* styles/finalStyle.css – Pantalla final del Escape Room */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-attachment: fixed;
+}
+
+.felicitacion {
+    background: rgba(20, 20, 40, 0.95);
+    padding: 70px 50px;
+    border-radius: 30px;
+    border: 5px solid #00ff9d;
+    max-width: 950px;
+    width: 100%;
+    box-shadow: 
+        0 0 80px rgba(0, 255, 157, 0.7),
+        inset 0 0 50px rgba(0, 255, 157, 0.15);
+    animation: pulso-ganador 4s infinite;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #00ff9d;
+    text-shadow: 
+        0 0 30px #00ff9d, 
+        0 0 60px #00ff9d, 
+        0 0 90px #00ff9d;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.9rem;
+    line-height: 1.7;
+    margin: 20px 0;
+}
+
+.destacado {
+    font-size: 3.2rem;
+    color: #ffd700;
+    text-shadow: 0 0 30px #ffd700;
+    font-weight: bold;
+    margin: 35px 0;
+}
+
+.final {
+    font-size: 1.6rem;
+    color: #bbbbbb;
+    margin-top: 40px;
+}
+
+/* Botones finales */
+.botones {
+    margin-top: 50px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.boton {
+    display: inline-block;
+    padding: 18px 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+}
+
+.boton {
+    background: linear-gradient(to right, #00ff9d, #00cc7a);
+    color: #000;
+    box-shadow: 0 10px 30px rgba(0, 255, 157, 0.5);
+}
+
+.boton:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 255, 157, 0.8);
+}
+
+.boton.secundaria {
+    background: transparent;
+    color: #ff6b6b;
+    border: 3px solid #ff6b6b;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+.boton.secundaria:hover {
+    background: #ff6b6b;
+    color: white;
+}
+
+/* Animación ganadora */
+@keyframes pulso-ganador {
+    0%, 100% { 
+        box-shadow: 0 0 80px rgba(0,255,157,0.7), inset 0 0 50px rgba(0,255,157,0.15);
+    }
+    50% { 
+        box-shadow: 0 0 120px rgba(0,255,157,1), inset 0 0 70px rgba(0,255,157,0.3);
+    }
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    h1 { font-size: 3.5rem; }
+    .destacado { font-size: 2.5rem; }
+    p { font-size: 1.6rem; }
+    .botones { flex-direction: column; align-items: center; }
+    .boton { width: 80%; }
+}

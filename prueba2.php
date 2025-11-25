@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Prueba 2 - Adivina por la imagen</title>
+    <script src="interactvidad.js"></script>
+    <link rel="stylesheet" href="styles/prueba2Style.css">
 </head>
 
 <body>
@@ -16,10 +18,8 @@
         <input type="text" id="respuesta" name="respuesta" placeholder="Escribe tu respuesta...">
         <br><br>
         <button type="submit">Comprobar</button>
-        <button type="button" onclick="pistas2()">Pedir pista</button>
-    </form>
 
-    <p id="pista"></p>
+    </form>
 
     <?php
 
@@ -38,12 +38,12 @@
             header("Location: prueba3.php"); // siguiente prueba
             exit;
         } else {
-            echo "<p style='color:red>" . "Respuesta incorrecta, inténtalo de nuevo.</p>";
-        }
+      echo "<p style = color:red> " . "Respuesta incorrecta, intentalo de nuevo";
+    }
     }
     ?>
 
-    <script src="interactvidad.js"></script>
+
 
 </body>
 

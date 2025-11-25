@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Prueba 3</title>
+    <script src="interactividad.js"></script>
+    <link rel="stylesheet" href="styles/prueba3Style.css">
 </head>
 
 <body>
@@ -22,6 +24,10 @@
         <input type="text" id="respuesta" name="respuesta" placeholder="Escribe tu respuesta...">
         <br><br>
         <button type="submit">Comprobar</button>
+
+        <button type="button" onclick="mostrarPista2()">Pedir pista</button>
+
+        <p id="pista2"></p>
     </form>
 
     <?php
@@ -29,7 +35,7 @@
     include "validacion.php";
 
     // Respuesta correcta
-    $respuestaCorrecta = "iglesia de santa maria del alcor";
+    $respuestaCorrecta = "la iglesia santa maria del alcor";
     $otraCorrecta = "santa maria del alcor";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -39,12 +45,12 @@
             header("Location: final.php");
             exit;
         } else {
-            echo "<p style='color:red>" . "Respuesta incorrecta, inténtalo de nuevo.</p>";
+            echo "<p style = color:red> " . "Respuesta incorrecta, intentalo de nuevo";
         }
     }
     ?>
 
-    <script src="interactvidad.js"></script>
+
 
 </body>
 

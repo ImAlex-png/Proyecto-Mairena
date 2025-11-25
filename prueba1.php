@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <title>Mini Prueba - Escape Room</title>
   <script src="interactividad.js"></script>
+  <link rel="stylesheet" href="styles/prueba1Style.css">
 </head>
 
 <body>
 
   <h1>Adivina el sitio 'historico'</h1>
-  <p>Intenta adivinar el sitio 'historico' del Viso del Alcor ( Es un sitio transcurrido por muchas personas y famoso).
+  <p>Intenta adivinar el sitio 'historico' del Viso del Alcor.
   </p>
 
   <form action="" method="post">
