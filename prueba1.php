@@ -10,9 +10,17 @@
 
 <body>
 
-  <h1>Adivina el sitio 'historico'</h1>
-  <p>Intenta adivinar el sitio 'historico' del Viso del Alcor.
-  </p>
+<h1>Adivina el sitio 'histórico'</h1>
+<p>Intenta adivinar el sitio 'histórico' de Mairena del Alcor.</p>
+
+<p>Al avanzar por un sendero empedrado, llegas frente a una enorme fortaleza  
+que domina el paisaje desde lo alto. En un cartel antiguo puede leerse:</p>
+
+<p><b>“He vigilado este pueblo desde la Edad Media.  
+Mis muros cuentan historias de nobles, guerras y tradición.”</b></p>
+
+<p>Estoy hablando de...</p>
+
 
   <form action="" method="post">
     <input type="text" id="respuesta" name="respuesta" placeholder="Escribe tu respuesta...">
@@ -33,9 +41,9 @@
 
   include "validacion.php";
 
-  $respuestaCorrecta = "los lilitos";
+  $respuestaCorrecta = "el castillo de luna";
 
-  $otraCorrecta = "lilitos";
+  $otraCorrecta = "castillo de luna";
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $respuestaUsuario = strtolower(trim($_POST['respuesta']));

@@ -9,15 +9,16 @@
 </head>
 
 <body>
-    <h1>Un poco de historia del Pueblo: El campanario Misterioso</h1>
+<h1>Un poco de historia del pueblo: El Pozo Encantado</h1>
 
-    <h2>¡Veamos que tan bien sabes el pueblo y su historia!</h2>
+<h2>¿Cuánto sabes sobre los rincones antiguos de Mairena?</h2>
 
-    <p>Observas una vieja torre con campanas. Al pie de ella, una placa dice:</p>
+<p>Te encuentras frente a un viejo pozo de piedra, rodeado de leyendas.  
+En una placa medio borrada puede leerse:</p>
 
-    <p><b>“Aquí reposa el patrón que guía a los visueños.”</b></p>
+<p><b>"Aquí brotó el agua que dio vida a los primeros maireneros."</b></p>
 
-    <p>Estoy hablando de....</p>
+<p>Estoy hablando de...</p>
 
 
     <form method="post" action="">
@@ -35,8 +36,8 @@
     include "validacion.php";
 
     // Respuesta correcta
-    $respuestaCorrecta = "la iglesia santa maria del alcor";
-    $otraCorrecta = "santa maria del alcor";
+    $respuestaCorrecta = "el pozo del arca";
+    $otraCorrecta = "pozo del arca";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $respuestaUsuario = strtolower(trim($_POST["respuesta"]));

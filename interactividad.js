@@ -1,14 +1,15 @@
 let pistas = [
-    "Es un sitio muy concurrido por los visueños...",
-    "Está cerca de un bar llamado el 'Piopa' ",
-    "Es un sitio muy visitado por los amantes de la cerveza",
+    "Es el monumento más representativo de Mairena del Alcor.",
+    "Sus muros datan de la época medieval.",
+    "Su nombre está relacionado con una familia noble muy influyente: los Luna.",
 ];
 
 let pistas2 = [
-    "El lugar que buscas es una iglesia.",
-    "Es la iglesia más importante y antigua del Viso del Alcor.",
-    "Su nombre completo incluye el de la Virgen que es patrona del pueblo.",
+    "Es uno de los pozos más antiguos del casco histórico de Mairena del Alcor.",
+    "Durante siglos fue un punto esencial para abastecer de agua a los vecinos.",
+    "Su nombre hace referencia a un antiguo lugar donde se guardaban bienes o provisiones.",
 ];
+
 
 let indice = 0;
 let indice2 = 0;

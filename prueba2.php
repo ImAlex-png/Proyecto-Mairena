@@ -12,7 +12,7 @@
 
     <h1>¿Qué sitio importante es este?</h1>
 
-    <img src="imagenes/piedra del Gallo.jpg" alt="Lugar misterioso" width="400">
+    <img src="imagenes/arconchel.jpeg" alt="Lugar misterioso" width="400">
 
     <form action="" method="post">
         <input type="text" id="respuesta" name="respuesta" placeholder="Escribe tu respuesta...">
@@ -27,9 +27,9 @@
 
     include "validacion.php";
 
-    $respuestaCorrecta = "la piedra del gallo";
+    $respuestaCorrecta = "el alconchel";
 
-    $otraCorrecta = "piedra del gallo";
+    $otraCorrecta = "fuente del alconchel";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $respuestaUsuario = strtolower(trim($_POST['respuesta']));
